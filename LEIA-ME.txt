@@ -1,0 +1,64 @@
+Apresentação — Smart Connect
+1. Início — Apresentação do projeto
+Organização do slide:
+- Nome do projeto: Smart Connect.
+- Proposta da loja virtual.
+- Objetivo principal.
+- Público-alvo: clientes e vendedores.
+Fala:
+
+"Nosso projeto é o Smart Connect, uma loja virtual desenvolvida com foco na venda de produtos de tecnologia e informática.
+
+A proposta foi criar uma plataforma que simulasse o funcionamento de um comércio eletrônico, oferecendo aos clientes uma experiência de navegação e compra simples e organizada.
+
+Além disso, buscamos desenvolver funcionalidades tanto para os clientes quanto para os vendedores, tornando o sistema mais completo."
+2. Interface — Apresentação visual
+Organização do slide:
+- Página inicial.
+- Catálogo e categorias de produtos.
+- Pesquisa e filtros.
+- Carrinho de compras.
+- Login e cadastro.
+- Perfil do cliente.
+- Painel do vendedor.
+- Página Sobre.
+Fala:
+
+"Na interface, buscamos desenvolver um visual moderno e intuitivo, facilitando a navegação dos usuários.
+
+A página inicial apresenta a loja e seus principais produtos. Também temos um catálogo com pesquisa, filtros e categorias, permitindo que o cliente encontre os produtos com mais facilidade.
+
+O sistema conta com carrinho de compras, favoritos e detalhes dos produtos.
+
+Além disso, desenvolvemos áreas específicas para cada tipo de usuário. O cliente pode acessar seu perfil e consultar seus pedidos, enquanto o vendedor pode cadastrar, editar e excluir produtos."
+3. Pontos técnicos — Desenvolvimento
+Organização do slide:
+- HTML5: estrutura.
+- CSS3: aparência e responsividade.
+- JavaScript: funcionalidades e interatividade.
+- LocalStorage: armazenamento de informações.
+- Organização e integração dos recursos.
+Fala:
+
+"Em relação ao desenvolvimento, utilizamos HTML, CSS e JavaScript.
+
+O HTML foi utilizado para estruturar as páginas, o CSS para desenvolver a identidade visual e adaptar a interface a diferentes tamanhos de tela, e o JavaScript para implementar as funcionalidades.
+
+Também utilizamos o LocalStorage, que permite armazenar informações diretamente no navegador, como produtos, usuários, favoritos, carrinho e pedidos.
+
+Um dos principais desafios foi integrar todas essas funcionalidades para que trabalhassem em conjunto, mantendo a organização e o funcionamento do sistema."
+4. Conclusão — Resultados e melhorias
+Organização do slide:
+- Resultado alcançado.
+- Conhecimentos aplicados.
+- Principais aprendizados.
+- Possibilidades de melhorias futuras.
+Fala:
+
+"Concluindo, o desenvolvimento do Smart Connect foi uma oportunidade de aplicar na prática os conhecimentos adquiridos durante o curso.
+
+Conseguimos desenvolver uma loja virtual com diferentes funcionalidades, trabalhando tanto na parte visual quanto na lógica do sistema.
+
+Como melhorias futuras, o projeto poderia receber um banco de dados, autenticação mais segura e integração com sistemas reais de pagamento.
+
+De forma geral, nosso objetivo foi desenvolver uma plataforma funcional que representasse o funcionamento de um e-commerce e demonstrasse os conhecimentos aplicados durante o desenvolvimento."

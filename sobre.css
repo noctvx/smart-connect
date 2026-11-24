@@ -1,0 +1,428 @@
+
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    background: #f7f8f5;
+    color: #202820;
+}
+
+.about-hero,
+.company-section,
+.purpose-section,
+.differentials-section,
+.about-cta {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.eyebrow {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #238141;
+}
+
+/* =========================================
+   BANNER PRINCIPAL
+========================================= */
+
+
+/* HERO INSTITUCIONAL */
+.about-hero {
+    min-height: 510px;
+    padding: 75px 8%;
+
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 75px;
+
+    background: #f7f8f5;
+    color: #202820;
+}
+
+/* Conteúdo textual */
+.about-hero-content {
+    max-width: 540px;
+}
+
+.about-hero h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(38px, 4.5vw, 59px);
+    line-height: 1.12;
+    letter-spacing: -2px;
+    margin: 22px 0;
+}
+
+.about-hero h1 span {
+    color: #238141;
+}
+
+.about-hero-content > p {
+    max-width: 460px;
+    color: #707970;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* Identidade institucional */
+.about-hero-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.about-hero-info > span {
+    width: 32px;
+    height: 2px;
+    background: #238141;
+}
+
+.about-hero-info p {
+    color: #4e5c50;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Imagem corporativa */
+.about-hero-visual {
+    position: relative;
+    height: 370px;
+}
+
+.about-hero-visual > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+/* Identificação sobre a imagem */
+.about-visual-label {
+    position: absolute;
+    bottom: -20px;
+    left: -25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    padding: 22px 28px;
+    background: #238141;
+    color: white;
+}
+
+.about-visual-label strong {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.about-visual-label span {
+    font-size: 11px;
+    opacity: 0.85;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    .about-hero {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 60px 7%;
+    }
+
+    .about-hero-visual {
+        height: 300px;
+    }
+
+    .about-visual-label {
+        left: -10px;
+    }
+}
+
+
+.about-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #238141;
+    color: #fff;
+
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 14px 23px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    margin-top: 20px;
+    transition: .25s;
+}
+
+.about-button:hover {
+    background: #2d9b50;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   APRESENTAÇÃO DA EMPRESA
+========================================= */
+
+.company-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.company-image {
+    height: 390px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.company-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.company-text h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin: 15px 0 22px;
+}
+
+.company-text h2 span {
+    color: #238141;
+}
+
+.company-text p {
+    color: #69736b;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   MISSÃO, VISÃO E VALORES
+========================================= */
+
+.purpose-section {
+    background: #eef2ec;
+    padding-top: 85px;
+    padding-bottom: 90px;
+}
+
+.purpose-heading {
+    text-align: center;
+    max-width: 570px;
+    margin: 0 auto 45px;
+}
+
+.purpose-heading h2,
+.differentials-heading h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 35px;
+    margin: 12px 0;
+    letter-spacing: -1px;
+}
+
+.purpose-heading p {
+    color: #707970;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.purpose-card {
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 5px;
+    border: 1px solid #e4e9e2;
+    transition: .25s;
+}
+
+.purpose-card:hover {
+    transform: translateY(-5px);
+    border-color: #238141;
+}
+
+.purpose-icon {
+    color: #238141;
+    font-family: 'Manrope', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.purpose-card h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.purpose-card p {
+    color: #707970;
+    font-size: 12px;
+    line-height: 1.9;
+}
+
+/* =========================================
+   DIFERENCIAIS
+========================================= */
+
+.differentials-section {
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.differentials-heading {
+    max-width: 500px;
+    margin-bottom: 45px;
+}
+
+.differentials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.differential-item {
+    border-top: 1px solid #dce3da;
+    padding-top: 25px;
+}
+
+.differential-number {
+    color: #238141;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.differential-item h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 17px;
+}
+
+.differential-item p {
+    color: #707970;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* =========================================
+   BANNER FINAL
+========================================= */
+
+.about-cta {
+    background: #101510;
+    color: #fff;
+    text-align: center;
+
+    padding-top: 85px;
+    padding-bottom: 90px;
+}
+
+.about-cta h2 {
+    max-width: 650px;
+    margin: 18px auto;
+    font-family: 'Manrope', sans-serif;
+    font-size: 38px;
+    letter-spacing: -1px;
+}
+
+.about-cta p {
+    color: #bdc5bc;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .company-section {
+        gap: 35px;
+    }
+
+    .differentials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-hero h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .about-hero {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 65px;
+        padding-bottom: 35px;
+    }
+
+    .about-hero-image {
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .company-section {
+        grid-template-columns: 1fr;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .company-image {
+        height: 260px;
+    }
+
+    .purpose-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .purpose-heading h2,
+    .differentials-heading h2 {
+        font-size: 28px;
+    }
+
+    .differentials-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-cta h2 {
+        font-size: 29px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .differentials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero h1 {
+        font-size: 38px;
+    }
+}

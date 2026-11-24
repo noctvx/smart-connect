@@ -1,0 +1,1200 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Configurações básicas da página -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101510">
+  <meta name="description" content="Smart Connect — Loja de produtos de tecnologia e informática.">
+
+  <title>Smart Connect | Tecnologia</title>
+
+  <!-- Otimização da conexão com o Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fontes utilizadas no projeto -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Arquivo principal de estilos -->
+  <link rel="stylesheet" href="estilo.css">
+
+  <!-- JavaScript carregado após a leitura do HTML -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- 1. TELA DE BOAS-VINDAS -->
+
+  <section class="welcome-screen" id="welcomeScreen">
+
+    <div class="welcome-left">
+
+      <div class="welcome-brand">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/16380/16380113.png"
+          alt="Logo Smart Connect"
+          class="brand-image"
+          fetchpriority="high"
+        >
+
+        <span class="brand-name">SMART CONNECT</span>
+      </div>
+
+      <div class="welcome-left-bottom">
+        <span class="welcome-line"></span>
+        <p>Tecnologia para o dia a dia.</p>
+      </div>
+
+    </div>
+
+    <div class="welcome-right">
+
+      <div class="welcome-top">
+        <span>TECNOLOGIA & INFORMÁTICA</span>
+        <span>DESDE 2026</span>
+      </div>
+
+      <div class="welcome-content">
+
+        <span class="welcome-label">
+          BEM-VINDO À SMART CONNECT
+        </span>
+
+        <h1>
+          Tecnologia<br>
+          em um só <span>lugar.</span>
+        </h1>
+
+        <p>
+          Encontre smartphones, computadores, acessórios
+          e outros produtos de tecnologia em nossa loja.
+          Navegue pelas categorias e confira as opções disponíveis.
+        </p>
+
+        <button
+          class="welcome-button"
+          id="btnComecar"
+          type="button"
+        >
+          Conhecer a loja
+          <span class="welcome-arrow" aria-hidden="true">→</span>
+        </button>
+
+      </div>
+
+      <div class="welcome-bottom">
+        <span>PRODUTOS DE TECNOLOGIA E INFORMÁTICA</span>
+        <span>SMART CONNECT © 2026</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- 2. CABEÇALHO E NAVEGAÇÃO -->
+
+  <header class="topbar">
+
+    <div class="topbar-inner">
+
+      <a class="brand" href="#inicio" aria-label="Smart Connect - Início">
+        smart<span>connect</span>
+      </a>
+
+      <form class="search" id="searchForm" role="search">
+
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Buscar produtos..."
+          aria-label="Buscar produtos"
+        >
+
+        <button type="submit" aria-label="Buscar produtos">
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/54/54481.png"
+            alt=""
+            loading="lazy"
+          >
+        </button>
+
+      </form>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+
+        <a class="active" href="#inicio">Início</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="sobre.html">Sobre</a>
+
+      </nav>
+
+      <div class="top-actions">
+
+        <button
+          class="icon-btn account-trigger"
+          id="accountBtn"
+          type="button"
+          aria-label="Minha conta"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/9308/9308008.png"
+            alt=""
+            loading="lazy"
+          >
+
+          <span id="accountLabel">Entrar</span>
+        </button>
+
+        <button
+          class="icon-btn cart-trigger"
+          id="cartOpen"
+          type="button"
+          aria-label="Abrir carrinho"
+          aria-controls="cartDrawer"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/833/833314.png"
+            alt=""
+            loading="lazy"
+          >
+
+          <span id="cartCount">0</span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- 3. CONTEÚDO PRINCIPAL -->
+
+  <main id="inicio">
+
+    <!-- Banner principal -->
+
+    <section class="hero">
+
+      <div class="hero-copy">
+
+        <span class="eyebrow">
+          Loja de tecnologia
+        </span>
+
+        <h1>
+          Produtos para<br>
+          o seu <span>dia a dia.</span>
+        </h1>
+
+        <p>
+          Confira nossa seleção de smartphones, computadores,
+          acessórios e outros produtos de informática.
+        </p>
+
+        <a class="button button-light" href="#produtos">
+          Ver produtos
+        </a>
+
+      </div>
+
+      <div class="hero-image">
+
+        <img
+          id="heroSlide"
+          src="https://static.vecteezy.com/system/resources/previews/051/338/557/non_2x/various-colorful-smartphones-in-a-row-isolated-on-a-transparent-background-free-png.png"
+          alt="Smartphones em destaque"
+          fetchpriority="high"
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- Banners de categorias -->
+
+    <section class="feature-grid" aria-label="Destaques da loja">
+
+      <a
+        class="feature feature-play"
+        href="#produtos"
+        data-filter-link="games"
+      >
+        <div>
+          <span class="eyebrow">Para quem gosta de games</span>
+          <h2>PlayStation 5</h2>
+          <span class="text-link">Ver produtos</span>
+        </div>
+
+        <img
+          src="https://images.digital.allugator.com/products/44ff87a1-f1e7-4c81-8698-848413779cc5/general-1793639171044-03.png"
+          alt="Controle de videogame"
+          loading="lazy"
+        >
+      </a>
+
+      <a
+        class="feature feature-mac"
+        href="#produtos"
+        data-filter-link="computadores"
+      >
+        <div>
+          <span class="eyebrow">Notebooks</span>
+          <h2>MacBook Air</h2>
+          <span class="text-link">Ver computadores</span>
+        </div>
+
+        <img
+          src="https://www.freeiconspng.com/uploads/-macbook-with-great-looks-background-2.png"
+          alt="Notebook aberto"
+          loading="lazy"
+        >
+      </a>
+
+      <a
+        class="feature feature-audio"
+        href="#produtos"
+        data-filter-link="acessorios"
+      >
+        <div>
+          <span class="eyebrow">Fones e equipamentos</span>
+          <h2>Áudio</h2>
+          <span class="text-link">Ver acessórios</span>
+        </div>
+
+        <img
+          src="https://png.pngtree.com/png-vector/20250321/ourmid/pngtree-wireless-headphone-png-image_15830312.png"
+          alt="Fone de ouvido"
+          loading="lazy"
+        >
+      </a>
+
+      <a
+        class="feature feature-phone"
+        href="#produtos"
+        data-filter-link="smartphones"
+      >
+        <div>
+          <span class="eyebrow">Celulares</span>
+          <h2>iPhone 16</h2>
+          <span class="text-link">Ver smartphones</span>
+        </div>
+
+        <img
+          src="https://freepngimg.com/thumb/iphone_16/136631-iphone-16.png"
+          alt="Smartphone"
+          loading="lazy"
+        >
+      </a>
+
+    </section>
+
+
+    <!-- 4. CATEGORIAS -->
+
+    <section class="section categories" id="categorias">
+
+      <div class="section-heading">
+
+        <div>
+          <span class="eyebrow">Explore a loja</span>
+          <h2>Produtos por categoria</h2>
+        </div>
+
+      </div>
+
+      <div class="category-list">
+
+        <button class="category active" data-category="todos" type="button">
+          <img src="https://cdn-icons-png.flaticon.com/128/1828/1828859.png" alt="" loading="lazy">
+          Todos
+        </button>
+
+        <button class="category" data-category="smartphones" type="button">
+          <img src="https://cdn-icons-png.flaticon.com/128/1551/1551230.png" alt="" loading="lazy">
+          Celulares
+        </button>
+
+        <button class="category" data-category="computadores" type="button">
+          <img src="https://cdn-icons-png.flaticon.com/128/3474/3474360.png" alt="" loading="lazy">
+          Computadores
+        </button>
+
+        <button class="category" data-category="games" type="button">
+          <img src="https://cdn-icons-png.flaticon.com/128/686/686589.png" alt="" loading="lazy">
+          Games
+        </button>
+
+        <button class="category" data-category="acessorios" type="button">
+          <img src="https://cdn-icons-png.flaticon.com/128/10087/10087824.png" alt="" loading="lazy">
+          Acessórios
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- 5. PRODUTOS -->
+
+    <section class="section products-section" id="produtos">
+
+      <div class="section-heading products-heading">
+
+        <div>
+          <span class="eyebrow">Confira nosso catálogo</span>
+          <h2>Produtos disponíveis</h2>
+        </div>
+
+        <select id="sortSelect" aria-label="Ordenar produtos">
+          <option value="featured">Mais relevantes</option>
+          <option value="low">Menor preço</option>
+          <option value="high">Maior preço</option>
+          <option value="name">Nome</option>
+        </select>
+
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+
+      <p class="empty-state" id="emptyState" hidden>
+        Nenhum produto encontrado. Tente outra pesquisa ou categoria.
+      </p>
+
+    </section>
+
+
+    <!-- 6. PRODUTOS POPULARES -->
+
+    <section class="popular">
+
+      <div class="popular-intro">
+
+        <span class="eyebrow">Conheça as categorias</span>
+
+        <h2>
+          Confira os<br>
+          principais produtos.
+        </h2>
+
+        <p>
+          Explore diferentes opções de celulares, computadores
+          e acessórios disponíveis na loja.
+        </p>
+
+        <a href="#produtos" class="button button-dark">
+          Ver catálogo
+        </a>
+
+      </div>
+
+      <a
+        class="popular-item"
+        href="#produtos"
+        data-filter-link="smartphones"
+      >
+        <img
+          src="https://png.pngtree.com/png-vector/20250307/ourmid/pngtree-latest-model-mobile-phone-png-image_15739741.png"
+          alt="Smartphone"
+          loading="lazy"
+        >
+        <span>Smartphones</span>
+      </a>
+
+      <a
+        class="popular-item"
+        href="#produtos"
+        data-filter-link="computadores"
+      >
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/079/935/903/small/modern-silver-laptop-with-colorful-screen-png.png"
+          alt="Notebook"
+          loading="lazy"
+        >
+        <span>Computadores</span>
+      </a>
+
+      <a
+        class="popular-item"
+        href="#produtos"
+        data-filter-link="acessorios"
+      >
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/071/686/908/small_2x/black-gaming-headphones-with-rgb-lighting-isolated-on-transparent-background-png.png"
+          alt="Fone de ouvido"
+          loading="lazy"
+        >
+        <span>Acessórios</span>
+      </a>
+
+    </section>
+
+
+    <!-- 7. BANNER DE OFERTAS -->
+
+    <section class="year-end-section" id="ofertas">
+
+      <div class="year-end-overlay">
+
+        <div class="year-end-content">
+
+          <span class="eyebrow">
+            SMART CONNECT • OFERTAS
+          </span>
+
+          <h2>
+            Confira nossas<br>
+            <span>ofertas.</span>
+          </h2>
+
+          <p>
+            Veja os produtos em promoção e confira as condições
+            disponíveis para cada item.
+          </p>
+
+          <a href="#produtos" class="year-end-button">
+            Ver produtos
+          </a>
+
+        </div>
+
+        <div class="year-end-decoration">
+          <span>SMART CONNECT</span>
+          <strong>2026</strong>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- 8. APRESENTAÇÃO DA EMPRESA -->
+
+    <section class="about-section" id="sobre">
+
+      <div class="about-copy">
+
+        <span class="eyebrow">Sobre a empresa</span>
+
+        <h2>
+          Conheça a<br>
+          Smart Connect.
+        </h2>
+
+        <p>
+          A Smart Connect é uma loja demonstrativa de produtos
+          de tecnologia e informática. O catálogo reúne categorias
+          como smartphones, computadores, games e acessórios,
+          organizadas para facilitar a navegação.
+        </p>
+
+        <p>
+          O projeto conta com recursos de pesquisa, filtros,
+          carrinho de compras, cadastro de usuários e gerenciamento
+          de produtos, oferecendo uma simulação de uma loja virtual.
+        </p>
+
+      </div>
+
+      <div class="about-panel">
+
+        <strong>
+          SMART<br>
+          <span>CONNECT</span>
+        </strong>
+
+        <p>
+          Produtos de tecnologia e informática.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- Banner final -->
+
+    <section class="sale-banner">
+
+      <div>
+
+        <span class="eyebrow">Smart Connect</span>
+
+        <h2>
+          Encontre o que<br>
+          você procura.
+        </h2>
+
+        <p>
+          Confira o catálogo e conheça os produtos disponíveis.
+        </p>
+
+        <a class="button button-light" href="#produtos">
+          Ver catálogo
+        </a>
+
+      </div>
+
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/009/638/594/small/smart-girl-appears-from-behind-a-big-phone-and-holding-phone-png.png"
+        alt="Pessoa utilizando um smartphone"
+        loading="lazy"
+      >
+
+    </section>
+
+  </main>
+
+
+  <!-- 9. RODAPÉ -->
+
+  <footer class="footer">
+
+    <div class="footer-main">
+
+      <div>
+
+        <a class="brand brand-footer" href="#inicio">
+          smart<span>connect</span>
+        </a>
+
+        <p>
+          Loja de produtos de tecnologia<br>
+          e informática.
+        </p>
+
+      </div>
+
+      <div>
+
+        <strong>Institucional</strong>
+
+        <a href="#inicio">Início</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#produtos">Produtos</a>
+        <a href="sobre.html">Sobre nós</a>
+
+      </div>
+
+      <div>
+
+        <strong>Atendimento</strong>
+
+        <a href="#ofertas">Ofertas</a>
+        <a href="mailto:contato@smartconnect.com.br">Fale conosco</a>
+
+        <span>Segunda a sexta, das 9h às 18h</span>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 Smart Connect. Todos os direitos reservados.
+    </div>
+
+  </footer>
+
+
+  <!-- 10. CARRINHO LATERAL -->
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside
+    class="cart-drawer"
+    id="cartDrawer"
+    aria-label="Carrinho de compras"
+    aria-hidden="true"
+  >
+
+    <div class="drawer-head">
+
+      <h2>Seu carrinho</h2>
+
+      <button id="cartClose" type="button" aria-label="Fechar carrinho">
+        ×
+      </button>
+
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="drawer-foot">
+
+      <div>
+        <span>Subtotal</span>
+        <strong id="cartTotal">R$ 0,00</strong>
+      </div>
+
+      <button class="button button-dark" id="checkoutBtn" type="button">
+        Finalizar compra
+      </button>
+
+      <small>
+        Ambiente demonstrativo. Nenhum pagamento real será processado.
+      </small>
+
+    </div>
+
+  </aside>
+
+
+  <!-- 11. MODAL DE AUTENTICAÇÃO -->
+
+  <div class="modal-backdrop" id="authModal" hidden>
+
+    <section
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="authTitle"
+    >
+
+      <button
+        class="modal-close"
+        data-close="authModal"
+        type="button"
+        aria-label="Fechar"
+      >
+        ×
+      </button>
+
+      <span class="eyebrow">Acesso à conta</span>
+
+      <h2 id="authTitle">Entrar na Smart Connect</h2>
+
+      <div class="role-switch">
+
+        <button type="button" class="role-btn active" data-role="cliente">
+          Cliente
+        </button>
+
+        <button type="button" class="role-btn" data-role="vendedor">
+          Vendedor
+        </button>
+
+      </div>
+
+      <form id="authForm" class="form-stack">
+
+        <label>
+          Nome completo
+
+          <input
+            id="authName"
+            autocomplete="name"
+            placeholder="Seu nome"
+            required
+          >
+        </label>
+
+        <label>
+          E-mail
+
+          <input
+            id="authEmail"
+            type="email"
+            autocomplete="email"
+            placeholder="voce@email.com"
+            required
+          >
+        </label>
+
+        <label>
+          Senha
+
+          <input
+            id="authPassword"
+            type="password"
+            minlength="4"
+            autocomplete="current-password"
+            placeholder="Mínimo de 4 caracteres"
+            required
+          >
+        </label>
+
+        <button class="button button-dark" type="submit">
+          Entrar / Criar conta
+        </button>
+
+      </form>
+
+      <p class="form-note">
+        Para criar uma conta de demonstração, preencha os campos.
+        Nos próximos acessos, utilize o mesmo e-mail e senha.
+      </p>
+
+    </section>
+
+  </div>
+
+
+  <!-- 12. PAINEL DO VENDEDOR -->
+
+  <section class="seller-section" id="sellerPanel" hidden>
+
+    <div class="seller-inner">
+
+      <div class="section-heading">
+
+        <div>
+          <span class="eyebrow">Área do vendedor</span>
+          <h2>Gerenciar produtos</h2>
+        </div>
+
+        <button class="button button-dark" id="sellerLogout" type="button">
+          Sair da conta
+        </button>
+
+      </div>
+
+      <form id="productForm" class="seller-form">
+
+        <input type="hidden" id="editProductId">
+
+        <label>
+          Nome do produto
+
+          <input
+            id="newProductName"
+            required
+            maxlength="80"
+            placeholder="Ex.: Headset Gamer"
+          >
+        </label>
+
+        <label>
+          Categoria
+
+          <select id="newProductCategory" required>
+            <option value="smartphones">Celulares</option>
+            <option value="computadores">Computadores</option>
+            <option value="games">Games</option>
+            <option value="acessorios">Acessórios</option>
+          </select>
+        </label>
+
+        <label>
+          Preço (R$)
+
+          <input
+            id="newProductPrice"
+            type="number"
+            min="0.01"
+            step="0.01"
+            required
+            placeholder="199,90"
+          >
+        </label>
+
+        <label>
+          URL da imagem
+
+          <input
+            id="newProductImage"
+            type="url"
+            required
+            placeholder="https://site.com/imagem.png"
+          >
+        </label>
+
+        <label class="full-field">
+          Descrição (opcional)
+
+          <textarea
+            id="newProductDescription"
+            rows="2"
+            maxlength="250"
+            placeholder="Detalhes do produto"
+          ></textarea>
+        </label>
+
+        <div class="form-actions full-field">
+
+          <button
+            class="button button-dark"
+            type="submit"
+            id="saveProductBtn"
+          >
+            Cadastrar produto
+          </button>
+
+          <button
+            class="button button-outline"
+            type="button"
+            id="cancelEditBtn"
+            hidden
+          >
+            Cancelar edição
+          </button>
+
+        </div>
+
+      </form>
+
+      <div class="seller-products" id="sellerProducts"></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- 13. PERFIL DO CLIENTE -->
+
+  <section class="account-page" id="profilePage" hidden>
+
+    <div class="account-container">
+
+      <div class="account-heading">
+
+        <div>
+          <span class="eyebrow">Minha conta</span>
+          <h1>Meu perfil</h1>
+
+          <p>
+            Consulte suas informações, pedidos e produtos favoritos.
+          </p>
+        </div>
+
+        <button class="button button-outline" id="profileBack" type="button">
+          Voltar à loja
+        </button>
+
+      </div>
+
+      <div class="profile-card">
+
+        <div class="profile-avatar" id="profileAvatar">
+          SC
+        </div>
+
+        <div class="profile-information">
+
+          <span class="eyebrow">
+            Dados da conta
+          </span>
+
+          <h2 id="profileName">Nome do cliente</h2>
+          <p id="profileEmail">email@email.com</p>
+
+        </div>
+
+        <button
+          class="button button-outline"
+          id="profileLogout"
+          type="button"
+        >
+          Sair da conta
+        </button>
+
+      </div>
+
+      <div class="profile-stats">
+
+        <article>
+          <span>Pedidos realizados</span>
+          <strong id="profileOrderCount">0</strong>
+        </article>
+
+        <article>
+          <span>Produtos favoritos</span>
+          <strong id="profileFavoriteCount">0</strong>
+        </article>
+
+      </div>
+
+      <div class="profile-section">
+
+        <div class="profile-section-heading">
+
+          <div>
+            <span class="eyebrow">Histórico</span>
+            <h2>Compras recentes</h2>
+          </div>
+
+        </div>
+
+        <div id="profileOrders" class="profile-orders">
+
+          <p class="profile-empty">
+            Você ainda não realizou compras.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="profile-section">
+
+        <div class="profile-section-heading">
+
+          <div>
+            <span class="eyebrow">Lista pessoal</span>
+            <h2>Produtos favoritos</h2>
+          </div>
+
+        </div>
+
+        <div id="profileFavorites" class="product-grid">
+
+          <p class="profile-empty">
+            Você ainda não favoritou produtos.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- 14. FINALIZAÇÃO DA COMPRA -->
+
+  <section class="checkout-page" id="checkoutPage" hidden>
+
+    <div class="checkout-container">
+
+      <div class="checkout-heading">
+
+        <div>
+          <span class="eyebrow">Resumo do pedido</span>
+          <h1>Finalizar compra</h1>
+
+          <p>
+            Confira os produtos e preencha os dados para concluir o pedido.
+          </p>
+        </div>
+
+        <button class="button button-outline" id="checkoutBack" type="button">
+          Voltar à loja
+        </button>
+
+      </div>
+
+      <div class="checkout-layout">
+
+        <div class="checkout-form-area">
+
+          <h2>Dados de entrega</h2>
+
+          <form id="checkoutForm" class="form-stack">
+
+            <label>
+              Nome completo
+
+              <input
+                id="checkoutName"
+                required
+                autocomplete="name"
+              >
+            </label>
+
+            <label>
+              E-mail
+
+              <input
+                id="checkoutEmail"
+                type="email"
+                required
+                autocomplete="email"
+              >
+            </label>
+
+            <label>
+              CPF
+
+              <input
+                id="checkoutCpf"
+                inputmode="numeric"
+                maxlength="14"
+                placeholder="000.000.000-00"
+                required
+              >
+            </label>
+
+            <label>
+              CEP
+
+              <input
+                id="checkoutCep"
+                inputmode="numeric"
+                maxlength="9"
+                placeholder="00000-000"
+                required
+              >
+            </label>
+
+            <label>
+              Endereço e número
+
+              <input
+                id="checkoutAddress"
+                required
+                placeholder="Rua, número, complemento"
+              >
+            </label>
+
+            <label>
+              Forma de pagamento
+
+              <select id="checkoutPayment" required>
+                <option value="">Selecione</option>
+                <option>Pix (simulação)</option>
+                <option>Cartão (simulação)</option>
+                <option>Boleto (simulação)</option>
+              </select>
+            </label>
+
+            <button class="button button-dark" type="submit">
+              Confirmar pedido
+            </button>
+
+          </form>
+
+          <p class="form-note">
+            Ambiente demonstrativo. Nenhum pagamento real será realizado.
+          </p>
+
+        </div>
+
+        <aside class="checkout-order">
+
+          <span class="eyebrow">Seu pedido</span>
+          <h2>Resumo dos produtos</h2>
+
+          <div id="checkoutSummary" class="checkout-summary"></div>
+
+        </aside>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- 15. MODAL DE DETALHES DO PRODUTO -->
+
+  <div class="modal-backdrop" id="productModal" hidden>
+
+    <section
+      class="modal product-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="productModalName"
+    >
+
+      <button
+        class="modal-close"
+        data-close="productModal"
+        type="button"
+        aria-label="Fechar"
+      >
+        ×
+      </button>
+
+      <div class="product-modal-content">
+
+        <div class="product-modal-image">
+
+          <img id="productModalImage" src="" alt="">
+
+        </div>
+
+        <div class="product-modal-info">
+
+          <span class="eyebrow" id="productModalCategory">
+            Categoria
+          </span>
+
+          <h2 id="productModalName">
+            Nome do produto
+          </h2>
+
+          <p id="productModalDescription">
+            Descrição do produto.
+          </p>
+
+          <strong class="product-modal-price" id="productModalPrice">
+            R$ 0,00
+          </strong>
+
+          <button class="button button-dark" id="productModalAdd" type="button">
+            Adicionar ao carrinho
+          </button>
+
+          <button class="button button-outline" id="productModalFavorite" type="button">
+          Adicionar aos favoritos
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- 16. PREFERÊNCIAS DE COOKIES -->
+
+  <aside
+    class="cookie-banner"
+    id="cookieBanner"
+    aria-label="Preferências de cookies"
+    hidden
+  >
+
+    <div>
+
+      <strong>Privacidade e cookies</strong>
+
+      <p>
+        Utilizamos armazenamento local para manter seu carrinho,
+        sua sessão demonstrativa e suas preferências. Ao continuar,
+        você pode aceitar ou recusar cookies não essenciais.
+      </p>
+
+      <a href="#sobre">Saiba mais</a>
+
+    </div>
+
+    <div class="cookie-actions">
+
+      <button class="button button-outline" id="rejectCookies" type="button">
+        Recusar
+      </button>
+
+      <button class="button button-dark" id="acceptCookies" type="button">
+        Aceitar
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- 17. NOTIFICAÇÕES -->
+
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  ></div>
+
+</body>
+</html>
